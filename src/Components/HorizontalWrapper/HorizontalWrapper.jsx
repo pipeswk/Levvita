@@ -5,7 +5,7 @@ const HorizontalWrapper = ( { children } ) => {
   return (
     <div className='container-fluid mt-3'>
         <div className='row'>
-            <div className={`col-12 w-100 d-flex justify-content-center ${styles.horizontalScrolling_Wrapper}`}>
+            <div className={`col-12 w-100 d-flex justify-content-md-center ${styles.horizontalScrolling_Wrapper}`}>
                 {children}
             </div>
         </div>
