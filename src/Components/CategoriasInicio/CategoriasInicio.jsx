@@ -8,15 +8,10 @@ const CategoriasInicio = () => {
         <h2 className='text-center'>¿Para quien compras?</h2>
         {/* //TODO: Mapear con la base de datos */}
         <HorizontalWrapper>
-          <CategoriaInicio />
-          <CategoriaInicio />
-          <CategoriaInicio />
-          <CategoriaInicio />
-          <CategoriaInicio />
-          <CategoriaInicio />
-          <CategoriaInicio />
-          <CategoriaInicio />
-          <CategoriaInicio />
+          <CategoriaInicio texto={'Hombre'} />
+          <CategoriaInicio texto={'Mujer'} />
+          <CategoriaInicio texto={'Niño'} />
+          <CategoriaInicio texto={'Niña'} />
         </HorizontalWrapper>
     </div>
   )
