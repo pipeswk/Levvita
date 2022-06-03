@@ -30,3 +30,4 @@ yarn-error.log*
 
 # vercel
 .vercel
+public/img/Video.mp4
