@@ -2,6 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import InfoBar from '../Components/InfoBar/InfoBar'
 import NavBar from '../Components/NavBar/NavBar'
+import Footer from '../Components/Footer/Footer'
 
 const Layout = ( { children, pagina } ) => {
   return (
@@ -15,6 +16,7 @@ const Layout = ( { children, pagina } ) => {
         <InfoBar />
         <NavBar />
         {children}
+        <Footer />
     </div>
   )
 }
