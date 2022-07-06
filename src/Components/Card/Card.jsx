@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Card.module.css'
 
-const Card = ( { movil, tablet, compu } ) => {
+const Card = ( { data, movil, tablet, compu } ) => {
 
     const mov = 12/movil;
     const tab = 12/tablet;
