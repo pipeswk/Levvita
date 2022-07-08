@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.css'; // Add this line
 import '../styles/globals.css'
 import { useEffect } from 'react'
+import { LevvitaProvider } from '../src/Context/LevvitaProvider';
 
 function MyApp({ Component, pageProps }) {
 
@@ -9,7 +10,9 @@ function MyApp({ Component, pageProps }) {
   }, []);
 
   return (
-    <Component {...pageProps} />
+    <LevvitaProvider>
+      <Component {...pageProps} />
+    </LevvitaProvider>
   )
 }
 
