@@ -1,9 +1,24 @@
+.card {
+    width: auto;
+    border-radius: 15px;
+    
+}
 .img {
-    height: 10rem;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 10px;
 }
 @media (min-width: 576px) {
     .img {
-        height: 17rem;
+        height: 20rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .title {
+        height: 4.5rem;
+        font-size: 1rem;
     }
 }
 
