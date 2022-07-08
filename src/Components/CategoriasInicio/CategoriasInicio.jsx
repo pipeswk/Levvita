@@ -1,8 +1,10 @@
-import React from 'react'
+import { useState } from 'react'
 import CategoriaInicio from '../CategoriaInicio/CategoriaInicio'
 import HorizontalWrapper from '../HorizontalWrapper/HorizontalWrapper'
 
 const CategoriasInicio = ( { type, title, categorias } ) => {
+
+  const [categoriaSeleccionada, setCategoriaSeleccionada] = useState('Todo');
 
   return (
     <div className='mt-4'>
@@ -13,6 +15,8 @@ const CategoriasInicio = ( { type, title, categorias } ) => {
               key={index}
               type={type}
               categoria={categoria}
+              setCatSeleccionada={setCategoriaSeleccionada}
+              catSeleccionada={categoriaSeleccionada}
             />
           ))}
         </HorizontalWrapper>
