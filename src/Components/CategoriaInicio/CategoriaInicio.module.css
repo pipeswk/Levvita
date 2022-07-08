@@ -1,6 +1,22 @@
-.circularImg {
+.circularImg, .circularImg_active {
     border-radius: 50%;
     width: 100px;
     height: 100px;
     margin: 0 auto;
+    opacity: 65%;
+}
+
+.circularImg:active{
+    transform: scale(0.95);
+}
+
+
+.circularImg_active{
+    opacity: 100;
+    transform: scale(0.95);
+    /* border: 7px solid green; */
+}
+
+.title_active{
+    font-weight: bold;
 }
