@@ -1,9 +1,12 @@
 import React from 'react'
+import Link from 'next/link'
 
 const Logo = () => {
   return (
     <div>
-      <a className="navbar-brand" href="#">LEVVITA</a>
+      <Link href='/'>
+        <a className="navbar-brand" href="#">LEVVITA</a>
+      </Link>
     </div>
   )
 }
