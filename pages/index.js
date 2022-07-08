@@ -16,7 +16,7 @@ export default function Home( { resultado } ) {
       <Slider slider={resultado.slider_principal} />
       <CategoriasInicio type='category' title='¿Para quien compras?' categorias={resultado.categorias} />
       <Hero seccion={resultado.seccion_marca} />
-      <Reticula title='Novedades' />
+      {/* <Reticula title='Novedades' data={resultado.home_products} /> */}
     </Layout>
 
   )
