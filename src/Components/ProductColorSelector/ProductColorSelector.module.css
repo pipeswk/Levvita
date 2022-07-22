@@ -1,0 +1,16 @@
+.img, .img_active {
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    opacity: 65%;
+}
+
+.img:active{
+    transform: scale(0.95);
+}
+
+.img_active {
+    opacity: 100;
+    transform: scale(0.95);
+}
