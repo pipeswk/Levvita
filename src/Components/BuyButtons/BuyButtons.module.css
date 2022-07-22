@@ -1,0 +1,26 @@
+.buyButton {
+    background-color: #8a2be2;
+    border: 1px solid #e3e3e3;
+    color: white;
+    width: 100%;
+    padding: 6px;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 20px;
+}
+.buyButton:hover {
+    background-color: #8400ff;
+    border-color: #ccc;
+    color: white;
+}
+
+.cartButton {
+    background-color: whitesmoke;
+    border: 1px solid #8a2be2;
+    color: #8a2be2;
+    width: 100%;
+    padding: 6px;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 20px;
+}
