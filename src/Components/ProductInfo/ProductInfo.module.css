@@ -1,0 +1,11 @@
+.ahorro {
+    width: max-content;
+    padding: 4px 40px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: linear-gradient(90deg,rgba(36,149,78,1) 0%,rgba(78,246,141,1) 100%);
+}
