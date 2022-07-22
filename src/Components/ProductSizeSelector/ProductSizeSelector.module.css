@@ -1,0 +1,25 @@
+.img, .img_active {
+    font-weight: 400;
+    color: black;
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    opacity: 65%;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img:active{
+    transform: scale(0.95);
+}
+
+.img_active {
+    opacity: 100;
+    transform: scale(0.95);
+    font-weight: 900;
+    border: 2px solid black;
+}
