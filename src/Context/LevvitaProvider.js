@@ -11,6 +11,9 @@ const LevvitaProvider = ( { children } ) => {
 
     const [productsCategory, setProductsCategory] = useState([]);
     const [category, setCategory] = useState('');
+    const [selectColor, setSelectColor] = useState(''); //TODO: PONER IMAGEN POR DEFECTO
+    const [colorSelected, setColor] = useState('');
+    const [selectSize, setSelectSize] = useState('');
 
 
     const getProductsCategory = async () => {
@@ -77,7 +80,13 @@ const LevvitaProvider = ( { children } ) => {
                 productsCategory,
                 setOffListenerCategory,
                 setOffListenerSubcategory,
-                getProductsSubcategory
+                getProductsSubcategory,
+                selectColor,
+                setSelectColor,
+                colorSelected,
+                setColor,
+                selectSize,
+                setSelectSize
             }}
         >
             {children}
