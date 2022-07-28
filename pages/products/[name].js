@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { db } from '../../utils/Firebase'
 import { collection, query, where, getDocs } from 'firebase/firestore'
 import ProductSlider from '../../src/Components/ProductSlider/ProductSlider'
@@ -10,8 +10,13 @@ import ProductInfo from '../../src/Components/ProductInfo/ProductInfo'
 import BuyButtons from '../../src/Components/BuyButtons/BuyButtons'
 import ProductOff from '../../src/Components/ProductOff/ProductOff'
 import ProductSection from '../../src/Components/ProductSection/ProductSection'
+import StickyFooter from '../../src/Components/StickyFooter/StickyFooter'
+import ProductModal from '../../src/Components/ProductModal/ProductModal'
 
 const EntradaProducto = ( { resultado } ) => {
+
+    const [modalOn, setModalOn] = useState(false);
+
     const {
         setSelectColor,
         colorSelected,
@@ -32,6 +37,13 @@ const EntradaProducto = ( { resultado } ) => {
     <Layout
         pagina={resultado.title}
     >
+        <StickyFooter
+            modalOn={modalOn}
+            setModalOn={setModalOn}
+        />
+        <ProductModal
+            options={resultado}
+        />
         <div className='container'>
             <div className='row'>
                 <div className='col-md-6 mt-5'>
