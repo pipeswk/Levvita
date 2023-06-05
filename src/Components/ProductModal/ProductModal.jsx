@@ -17,7 +17,7 @@ const ProductModal = ( { options } ) => {
         <div className="modal-dialog modal-fullscreen-sm-down">
             <div className="modal-content">
                 <div className="modal-header">
-                    <h5 className="modal-title" id="exampleModalLabel">Título del modal</h5>
+                    <h5 className="modal-title" id="exampleModalLabel">Elige color y talla:</h5>
                     <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div className="modal-body">
